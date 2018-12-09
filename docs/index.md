@@ -11,12 +11,14 @@ Press the **Download** button to download the file to your iPad
 
 When the Micro:bit Explorer Playground has been downloaded;  tap **Open in "Playgrounds"**
 
+
+
 ## Flash the Micro:bit with the Explorer Program
 Micro:bit Explorer requires a special program to run on the Micro:bit.
 
 You will need to use a computer with a USB connection.
 
-Connect the Micro:bit to the computer using a suitable USB cable.
+Connect the Micro:bit to your computer using a suitable USB cable.
 
 Using the web browser on your computer, go to  [github.com/phwallen/microbit-explorer](https://github.com/phwallen/microbit-explorer/) and click on file **Microbit Explorer.hex.zip**
 
