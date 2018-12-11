@@ -1,0 +1,29 @@
+{
+  "title" : "micro:bit explorer",
+  "publisherName" : "Peter Wallen",
+  "feedIdentifier" : "com.github.phwallen",
+  "contactURL" : "https://github.com/phwallen/microbit-explorer",
+  "formatVersion" : "1.2",
+  "documents" : [
+    {
+        "title" : "Beta Micro:bit Explorer",
+        "overviewSubtitle" : "Get inside the micro:bit processor",
+      "detailSubtitle" : "Learn how a digital computer works",
+      "description" : "",
+      "difficultyLevel" : "advanced",
+      "contentIdentifier" : "com.github.phwallen.microbit-explorer",
+      "contentVersion" : "0.1.0",
+      "url" : "https://https://github.com/phwallen/microbit-explorer/Microbit-Explorer.playgroundbook.zip",
+      "publishedDate" : "2018-12-11T18:00:00+01:00",
+      "lastUpdatedDate" : "2018-12-11T18:00:00+01:00",
+      "thumbnailURL" : "explorer_thumbnail.png",
+      "bannerImageURL" : "explorer_banner.png",
+      "additionalInformation" : [
+        {
+          "name" : "Languages",
+          "value" : "English"
+        }
+      ]
+    }
+  ]
+}
