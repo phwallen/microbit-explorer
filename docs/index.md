@@ -14,7 +14,9 @@ The Micro:bit Explorer allows students to:
 
 The Micro:bit explorer is  a way of introducing computer fundamentals in a visual way without the need for, possibly, extensive software tool setup.  It may be, after initial experimentation, students will want extend their studies with software tools such as OpenOCD or pyOCD and, perhaps, write some assembler code using the MicroPython inline assembler or use the ARM toolchain.
 
-![Figure 1](images/Microbit-Explorer-Figure1.PNG)*Figure 1 The Micro:bit Explorer Swift Playground*
+![Figure 1](images/Microbit-Explorer-Figure1.PNG)
+
+*Figure 1 The Micro:bit Explorer Swift Playground*
 
 The Micro:bit Explorer is divide into 4 views (or windows).  Figure 1 shows the first 3 views :
 
