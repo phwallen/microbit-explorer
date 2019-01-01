@@ -14,7 +14,7 @@ The Micro:bit Explorer allows students to:
 
 The Micro:bit explorer is  a way of introducing computer fundamentals in a visual way without the need for, possibly, extensive software tool setup.  It may be, after initial experimentation, students will want extend their studies with software tools such as OpenOCD or pyOCD and, perhaps, write some assembler code using the MicroPython inline assembler or use the ARM toolchain.
 
-![Figure 1](images/Microbit-Explorer-Figure1.png)*Figure 1 The Micro:bit Explorer Swift Playground*
+![Figure 1](images/Microbit-Explorer-Figure1.PNG)*Figure 1 The Micro:bit Explorer Swift Playground*
 
 The Micro:bit Explorer is divide into 4 views (or windows).  Figure 1 shows the first 3 views :
 
@@ -30,7 +30,7 @@ The Micro:bit Explorer is divide into 4 views (or windows).  Figure 1 shows the 
 
 Figure 2 shows the pipeline view, allowing students to simulate machine cycles. Each cycle fetches, decodes and executes the machine code created when the **program()** function is run. Unlike the execute() function which executes an entire sequence of instructions (maximum 8) on the Micro:bit, the program() function passes each instruction from a stored program individually during the execute phase of the pipeline. Instructions that influence the Program Counter (e.g. branch instructions) are simulated and not passed to the Micro:bit. There is no theoretical restriction on the size of the code using the program() function.
 
-![Figure 2](images/Microbit-Explorer-Figure2.png)*Figure 2 The Pipeline View*
+![Figure 2](images/Microbit-Explorer-Figure2.PNG)*Figure 2 The Pipeline View*
 
 The **assemble()** function can be used with the program() or execute() functions as an alternative to directly supplying machine code. The built-in assembler has a number of restrictions, but should process source similar to that used by the GCC tools, and, output suitable Thumb machine code for the Micro:bit's ARM processor.
 
