@@ -49,12 +49,12 @@ After instruction(s) have executed, the LEDs on the Micro:bit indicate the conte
 - Program Status Register -  N clear, Z set, C clear,  V clear
 
 # Installation
-## Install the Micro:bit Explorer Playground
+## Install the Micro:bit Explorer Playground Book
 To run the Micro:bit Explorer you will need an iPad capable of running Apple's Swift Playgrounds App. If the App is not installed on your iPad, go to the App Store and search for **Swift Playgrounds**. It's free to download.
 
-Once the Swift Playgrounds App is installed, using the web browser on your iPad, go to  [phwallen.github.io/Microbit-Explorer.playgroundbook.zip](https://phwallen.github.io/Microbit-Explorer.playgroundbook.zip)
+Once the Swift Playgrounds App is installed, using the web browser on your iPad, download:  [https://phwallen.github.io/Microbit-Explorer.playgroundbook.zip](https://phwallen.github.io/Microbit-Explorer.playgroundbook.zip) 
 
-When the Micro:bit Explorer Playground has been downloaded;  tap **Open in "Playgrounds"**
+When the Micro:bit Explorer Playground Book has been downloaded;  tap **Open in "Playgrounds"**
 
 ## Flash the Micro:bit with the Explorer Program
 Micro:bit Explorer requires a special program to run on the Micro:bit.
@@ -63,7 +63,7 @@ You will need to use a computer with a USB connection.
 
 Connect the Micro:bit to your computer using a suitable USB cable.
 
-Using the web browser on your computer, go to  [download Microbit Explorer.hex](https://phwallen.github.io/Microbit-Explorer.hex).
+Using the web browser on your computer, download: [https://phwallen.github.io/Microbit-Explorer.hex ](https://phwallen.github.io/Microbit-Explorer.hex)
 
 Now you can 'Flash'  the Micro:bit Explorer program to the Micro:bit.
 
