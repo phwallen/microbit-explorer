@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f1O-1X-qfD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live View Container Controller-->
+        <scene sceneID="xhP-0u-zeN">
+            <objects>
+                <viewController id="f1O-1X-qfD" customClass="LiveViewContainerController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LOz-Zb-2Qx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOp-rB-ONV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="bFS-xa-fwH" kind="embed" identifier="embededLiveViewControllerSeque" id="WsZ-VK-wSn"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Tf-Fa-IQr" firstAttribute="bottom" secondItem="XOp-rB-ONV" secondAttribute="bottom" id="HWs-8Y-5hB"/>
+                            <constraint firstItem="XOp-rB-ONV" firstAttribute="top" secondItem="5Tf-Fa-IQr" secondAttribute="top" id="KUe-g4-Uqh"/>
+                            <constraint firstItem="5Tf-Fa-IQr" firstAttribute="trailing" secondItem="XOp-rB-ONV" secondAttribute="trailing" id="TcQ-Rp-Jb2"/>
+                            <constraint firstItem="XOp-rB-ONV" firstAttribute="leading" secondItem="5Tf-Fa-IQr" secondAttribute="leading" id="y9Y-LA-pvw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Tf-Fa-IQr"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="XOp-rB-ONV" id="rhP-Dt-sey"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxQ-hj-Hxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-544.921875" y="-60.9375"/>
+        </scene>
+        <!--Live View Controller-->
+        <scene sceneID="DGT-yd-UkU">
+            <objects>
+                <viewController id="bFS-xa-fwH" customClass="LiveViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2qJ-5w-VfB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="uB8-EF-Zel">
+                                <rect key="frame" x="16" y="0.0" width="343" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfv-Oy-kPC" customClass="ProcessorView">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="211"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xzy-KM-X6S" customClass="KeypadView">
+                                        <rect key="frame" x="0.0" y="218" width="343" height="211"/>
+                                        <color key="backgroundColor" red="0.43429600489999998" green="1" blue="0.46420549519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWc-6i-KaZ" customClass="PipelineView">
+                                        <rect key="frame" x="0.0" y="436" width="343" height="211"/>
+                                        <color key="backgroundColor" red="0.017556071279999998" green="0.2643227279" blue="0.99829202890000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uB8-EF-Zel" firstAttribute="leading" secondItem="2qJ-5w-VfB" secondAttribute="leadingMargin" id="gJ6-nV-LyW" userLabel="Stack View.leading = leadingMargin + 0"/>
+                            <constraint firstItem="uB8-EF-Zel" firstAttribute="top" secondItem="2qJ-5w-VfB" secondAttribute="top" id="r68-CG-uBN" userLabel="Stack View.top = top + 0"/>
+                            <constraint firstItem="uB8-EF-Zel" firstAttribute="centerX" secondItem="2qJ-5w-VfB" secondAttribute="centerX" id="y0a-5a-PzW"/>
+                            <constraint firstAttribute="bottom" secondItem="uB8-EF-Zel" secondAttribute="bottom" id="yWP-VA-t9P" userLabel="bottom = Stack View.bottom + 0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VTY-GF-qnp"/>
+                    </view>
+                    <connections>
+                        <outlet property="keypadView" destination="Xzy-KM-X6S" id="vC5-lk-Q2Z"/>
+                        <outlet property="pipelineView" destination="eWc-6i-KaZ" id="mJX-WB-2EM"/>
+                        <outlet property="processorView" destination="wfv-Oy-kPC" id="7ft-Eo-Dfh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvC-RW-W8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206.40000000000001" y="-112.89355322338831"/>
+        </scene>
+    </scenes>
+</document>
